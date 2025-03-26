@@ -22,7 +22,7 @@
 
 import statistics
 
-data = [1, 2, 2, 3, 4, 5, 5, 5, 6]
+data = [1, 2, 2, 3,3,3,3 4,4, 5, 5]
 
 # Mean (average)
 mean = statistics.mean(data)
@@ -37,38 +37,38 @@ mode = statistics.mode(data)
 print(f"Mode: {mode}")
 
 
-import numpy as np
+# import numpy as np
 
-data = [1, 2, 2, 3, 4, 5, 5, 5, 6]
+# data = [1, 2, 2, 3, 4, 5, 5, 5, 6]
 
-# Mean
-mean = np.mean(data)
-print(f"Mean: {mean}")
+# # Mean
+# mean = np.mean(data)
+# print(f"Mean: {mean}")
 
-# Median
-median = np.median(data)
-print(f"Median: {median}")
+# # Median
+# median = np.median(data)
+# print(f"Median: {median}")
 
-# mod = np.mode(data)
-# print(f"Median: {mod}")
+# # mod = np.mode(data)
+# # print(f"Median: {mod}")
 
 
-data = [1, 2, 2, 3, 4, 5, 5, 5, 6]
+# data = [1, 2, 2, 3, 4, 5, 5, 5, 6]
 
-# Mean
-mean = sum(data) / len(data)
-print(f"Mean: {mean}")
+# # Mean
+# mean = sum(data) / len(data)
+# print(f"Mean: {mean}")
 
-# Median
-sorted_data = sorted(data)
-n = len(sorted_data)
-median = (sorted_data[n//2] if n % 2 != 0 
-          else (sorted_data[n//2 - 1] + sorted_data[n//2]) / 2)
-print(f"Median: {median}")
+# # Median
+# sorted_data = sorted(data)
+# n = len(sorted_data)
+# median = (sorted_data[n//2] if n % 2 != 0 
+#           else (sorted_data[n//2 - 1] + sorted_data[n//2]) / 2)
+# print(f"Median: {median}")
 
-# Mode
-frequency = {}
-for value in data:
-    frequency[value] = frequency.get(value, 0) + 1
-mode = max(frequency, key=frequency.get)
-print(f"Mode: {mode}")
+# # Mode
+# frequency = {}
+# for value in data:
+#     frequency[value] = frequency.get(value, 0) + 1
+# mode = max(frequency, key=frequency.get)
+# print(f"Mode: {mode}")
